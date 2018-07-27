@@ -1,0 +1,98 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Energy Harvesting for Electric Vehicles} \label{sec:harvesting}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Energy harvesting refers to harnessing energy from the environment or other sources (e.g. solar, thermal energy, friction etc.) and converting it to electrical energy. 
+In EVs, energy harvesting work as an important energy resource, which can save a lot of electric energy and thus can extend the range of EVs with the same charging time. 
+In this work, we survey different energy harvesting techniques in EVs. 
+State-of-the-art research work are summarized in terms of different energy sources.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Introduction}
+
+EV is one of the promising solutions to the critical issues of global warming and depletion of fossil fuels.
+Nowadays, a lot of EVs are powered by harvested energy or hybrid energy including harvested energy, such as solar energy, wind energy, and energies brought by vehicle shock/vibration and brakes.
+In the following, we summarize the research work on different sources of harvested energies on EVs.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Energy Sources}
+
+\subsubsection{Solar}
+
+As one of the most important renewable energy sources, solar energy is positioned to reduce the use of natural gas and coal for electricity generation and to provide electricity for the plug-in electric vehicle market~\cite{JX_21}. Abundant sunlight makes it perfect to be used as an alternative energy on electric hybrid vehicles~\cite{JX_10,JX_63}. The annual potential of solar energy is several times larger than the total energy consumption in the world.
+
+\begin{figure}
+\centering
+\includegraphics[width=1.0\hsize]{Figures/Jason_Xue/JX_figure1.pdf}
+\caption{Circuit of a PV system on a EV~\cite{JX_68}.}
+\label{JX_image1}
+\end{figure}      
+
+The most common mechanism to harvest solar energy is directly converting the light into direct current electricity via the photovoltaic effect. Fig.~\ref{JX_image1} shows the system circuit of a photovoltaic (PV) powered EV, which consists of a PV array and peripheral charging regulation circuitry~\cite{JX_68,JX_34}. A PV array consists of a number of series-connected PV cell groups where each PV group consists of (potentially a different number of) PV cells connected in parallel. The PV array are mounted on the roof panel, engine hood, trunk, and door panels of the EV. Conventional EVs are equipped with battery packs as the energy storage system, connected to the traction motor via the generator charger. The PV-powered EV also has an add-on PV system that consists of a PV array and a PV charger connecting the PV array to battery packs. The generator charger and PV charger can simultaneously charge battery packs. Maximum power point tracking (MPPT) techniques are integrated with the PV charger, which are employed in PV systems to make full utilization of PV array for large output power~\cite{JX_5,JX_41,JX_47}. Therefore, the PV charger can set the optimal operating point for the PV array. There are three main issues for solar energy harvesting.
+
+First, since the PV cell array is installed on different parts of a vehicle body such as the engine hood, door panels, and the roof panel, and the system suffers from non-uniformity of the solar irradiance and partial shading phenomenon. Partial shading of PV arrays is one of the hottest problem in the field of solar PV. It exhibits multiple peaks in the PV and thus reduces the overall output power~\cite{JX_57}. As a result, the modules have to be reconfigured to get a maximum power output. Many previous work~\cite{JX_6,JX_34,JX_64,JX_68} presented dynamic PV array reconfiguration techniques to produce the near-optimal reconfiguration of the PV array on the EV. For these work, the goal is to maximize the PV system output power under any solar irradiance and temperature distribution on the PV array. Vicente et al.~\cite{JX_66} developed a model to describe the effects of solar panels area and position, vehicle dimensions and propulsion system components on vehicle performance, and further exploited it for optimization.
+
+Second, the difference in energy demand for DC motor impacts the lifetime of the battery. When the car is decelerating, energy demand for the DC motor is very less and voltage drop of battery is negligible. However, when the car is accelerating, climbing slope or starting, the motor will cause a large current impulse, which may lead to large voltage drop on the battery. This will affect power quality of DC source and lifetime of battery. In order to avoid this,~\cite{JX_2,JX_26,JX_67} proposed to employs a super capacitor. When the car is decelerating, super capacitor will charge up to its rated voltage. Multi-port converter interfacing a PV array, battery and a DC load is proposed. It is composed of a two uni-directional DC port for interfacing PV array and DC load, and a bi-directional DC port for interfacing battery. The capacitor which is connected to the lead acid battery will charge at off peak hours and discharge during the acceleration time of the car. The control strategy of bi-directional converter is proposed, which operates at three operation modes: charge battery, discharge battery, and shutdown. The advantage is better protection and more efficient control on charge/discharge of the battery.
+
+The third issue of solar vehicle is to achieve the the routing request in bounded time~\cite{JX_4,JX_14,JX_17,JX_46}. Chen et al.~\cite{JX_14} proposed to use particle swarm optimization such that the vehicle reaches the destination within the user defined delay. Aqueel~\cite{JX_4} adopted the energy consumption ratio to measure the efficiency of the solar vehicle which is denoted as arrival ratio divided by energy consumption. The aim is to achieve a high energy consumption ratio for the time-bounded routing request. \cite{JX_17} proposed to optimally plan the speed on different road segments and thus balancing energy harvesting and consumption With the consideration of the solar illumination and the traffic flow, a suitable velocity is predicted for the solar vehicle to have the minimum energy using in moving.
+
+In addition, by using nano-materials the incident radiation can be increased by 9 times~\cite{JX_1} while the efficiency of the solar collector is 10\% higher compared to that of a conventional flat plate solar collector.
+
+\subsubsection{Wind energy}
+
+Wind energy, similar to solar energy is a common energy source which is harvested and transformed to electricity in many areas. For (electric) vehicles, when it is moving, wind will cause a drag force which is opposite to the direction of the propulsion of the vehicle. Now if these stream generated by the interaction of the wind and vehicle is captured in such a way that it would not impose an additional drag at the direction of propulsion of the vehicle, some of the energy can be recovered and fed back to the battery by means of conventional energy conversion processes. Placing a wind turbine, which can be mounted on the body structure of the vehicle can serve the purpose to generate electricity~\cite{JX_13,JX_50}.
+
+One major challenge of harvesting wind energy through wind turbines is that normally wind speed varies significantly, which causes voltage and power fluctuation problems at the load side~\cite{JX_73}. When the wind speed is high, the peak power might bring damage to the electric system. Also, the extra power can be wasted during the high-speed period. The system thus should be able to efficiently store the energy generated by wind turbines for future use when no wind is available~\cite{JX_32}. To achieve this, one way is to appropriately utilize power converters and control strategies to inject proper power to grid~\cite{JX_15,JX_51,JX_52}. Another conventional method is to store wind energy after appropriate conversion in the form of hydrogen which will be converted to electrical energy via fuel cells (FCs)~\cite{JX_53}. In~\cite{JX_8}, power conditioning for a wind-hydrogen energy system has been reported. Bechrakis et al. \cite{JX_9} investigated simulation and operational assessment for a small autonomous wind-hydrogen energy system.
+
+Normally, wind energy is not the only harvest energy source in electric vehicles. It is often combined with solar energy together to support the process of electric vehicles~\cite{JX_13,JX_52,JX_62}.
+
+\subsubsection{Regenerative shock absorbers}
+
+When an electric vehicles move in the road, the suspension power of the conventional shock absorbers are normally dissipated through friction and heat. However, these wasted energy in a vehicles shock absorber can be collected and converted to an alternative electric energy through energy regenerative shock absorber, as shown in Fig.~\ref{JX_image2}.
+
+\begin{figure}
+\centering
+\includegraphics[width=1.0\hsize]{Figures/Jason_Xue/JX_figure2.pdf}
+\caption{Regenerative shock energy converted into electricity~\cite{JX_75}.}
+\label{JX_image2}
+\end{figure}      
+
+Fundamental research has examined and analyzed the feasibility of harvesting energy from the shock absorber since the 1980s~\cite{JX_61}. The regenerative shock absorber was proposed to harvest the kinetic energy dissipated by the suspension vibration in the shock absorber. In~\cite{JX_61}, Segel et al. described and analyzed how energy lost in a car shock absorber corresponding to different vehicles speed and road roughness. Recent study further uncovered the potential of energy harvesting from the shock absorber~\cite{JX_28,JX_78}. Zuo and Zhang~\cite{JX_78} made a significant improvement in the energy harvesting and ride comfort of regenerative vehicle suspensions over existing techniques. They presented a regenerative shock absorber and estimated a power range of 100,400 W at 100 km/h depending on the road profile. Huang et al.~\cite{JX_28} proposed an analytical methodology based on groundtire interface analysis and ride comfort cost function for an energy-regenerative suspension design. This research work aimed to achieve optimal performance and ride comfort and derive the closed-form solutions of the performance metrics for an energy-regenerative suspension. Among these initial theoretic study, the shock absorber was transformed into an energy harvesting device from an energy dissipating device. Possible noise and heat in the conventional working progress are eliminated, which is environmentally friendly and lifetime extending.
+
+With respect to long-term evolution and development, regenerative shock absorbers can be classified into three categories based on their working principles: electromagnetic, hydraulic and mechanical designs.
+
+The first category directly uses an electromagnetic method to generate the electric power. The methods include linear~\cite{JX_23,JX_33,JX_69,JX_72,JX_77} and rotary schemes~\cite{JX_24,JX_42}. A linear electromagnetic regenerative shock absorber converts the kinetic energy of vertical oscillations into electricity by electromagnetic induction. The structure of linear schemes is simple and kinetic energy is converted directly. Unlike normal linear movement damper, rotary damper rotates by the upper arm of suspension when tire move up and down. This structure has high efficiency which can reach 90\% for both driving and back driving but needs to change suspension structure largely which in turn will have influence on the handling and stability performance.
+
+For the second category, hydraulic regenerative shock absorbers can harvest the vibration energy and convert this energy into electricity by employing oscillatory motion to drive the power generator. They utilized commercial DC/AC motors as generators and focused on various methods to drive these generators. A number of study reformed the existing hydraulic shock absorber and utilized the oil in the shock absorber to flow into a side oil circuit~\cite{JX_19,JX_74}. They normally use the flowing fluid to drive a hydraulic motor, which is connected in parallel to a DC/AC generator. Check valves are also used to ensure unidirectional fluid flow and unidirectional rotation of the hydraulic motor.
+
+The third category is mechanical design, which is developed rapidly because of a greater efficiency and average power. In previous study~\cite{JX_3,JX_24,JX_49,JX_59}, ball screws have been used for the transmission of regenerative shock absorbers for the sake of good stiffness and transmitting efficiency. Sabzehgar and Maravandi designed and improved an energy regenerative suspension using an algebraic screw linkage in~\cite{JX_49,JX_59}. A hexagon linkage was used in the initial design, and a two-leg linkage was presented in latter schemes. Gupta et al. \cite{JX_22} compared different electromagnetic shock absorbers and found that rotary schemes had large power compared with the linear schemes in bench tests. The results also indicated that rack and gears have the potential to drive a larger DC/AC motor to achieve greater power density. In~\cite{JX_38}, Li and Zuo analyzed and modeled an equivalent circuit for an electromagnetic regenerative shock absorber using a rack and gears. This model assisted the evaluation and optimization of the rack-and-gears schemes. Rack-and-gears regenerative shock absorbers based on a mechanical design were rapidly developed because of their high efficiency and average power~\cite{JX_39,JX_40}.
+
+\subsubsection{Regenerative braking}
+
+Regenerative braking is that the kinetic energy from a moving car generates electricity back to the battery when a vehicle is in coasting and braking modes 3. With regenerative braking technique, it is shown that EVs can increase the driving distance up to 15\% with respect to EVs without the regenerative braking system (RBS).
+
+\begin{figure}
+\centering
+\includegraphics[width=1.0\hsize]{Figures/Jason_Xue/JX_figure3.pdf}
+\caption{Regenerative brakes.}
+\label{JX_image3}
+\end{figure}      
+
+According to different ways to capture the energy generated by regenerative braking, the-state-of-the-art regenerative braking systems can be clarified into the following four types. First, the electricity generated is stored directly into batteries. Unfortunately, due to frequent charging, the lifetime of batteries will be decreased~\cite{JX_12,JX_45}. Second, instead of directly charging to battery, ultracapacitors/supercapacitors are used to store the energy from regenerative braking~\cite{JX_11,JX_31}. Besides, ultracapacitors are the options with higher power densities compared to batteries. The above two kinds of systems can capture and return around 50\% of the energy lost in braking~\cite{JX_48,JX_65}.
+
+Third, the break energy can be stored by hydraulic motors into a small canister through compressed air. When you hit the brakes, this system engages a pump which forces compressed air into a tank. This converts the mechanical energy of motion into elastic energy in the gas. These systems can capture and return around 70\% of the energy lost in braking~\cite{JX_30,JX_58}.
+
+The last way is that, energy can also be stored in Flywheel energy system (FES) as rotating energy. When you hit the brakes, this system transfers the mechanical energy of motion into electricity, which is then used to speed up the flywheel~\cite{JX_16,JX_25,JX_70}. These systems can capture and return around 70\% of the energy lost in braking~\cite{JX_48}.
+
+\subsubsection{Waste Heat Recovery}
+
+There exists a great deal of waste heat in electric vehicles. For electric vehicles employing internal combustion engines, the engine can only convert about 25\% of the chemical energy into mechanical energy, while a majority is converted as waste heat in the exhaust and coolant~\cite{JX_37,JX_43,JX_55}. 
+For fuel cell electric vehicles, the generated waste heat is around 40\% of the consumed fuel power~\cite{JX_51_1}. The waste heat in electric vehicles can be utilized to further generate power for energy saving and reduction of pollutants. The recovered waste energy can be used for cooling system~\cite{JX_29} or stored in the battery~\cite{JX_71}. There are two techniques used to convert the waste heat: thermoelectric generators (TEGs) and heat pipes.
+
+TEGs take advantage of the Seebeck effect in semiconductors to directly convert the heat into electrical energy~\cite{JX_54,JX_60,JX_76}. Generator efficiency is defined as the ratio of the electricity produced to the total amount of heat induced. Zorbas et al.~\cite{JX_76} developed a measurement method and a theoretical model to calculate the efficiency of a thermoelectric generator device. Various parameters of the TEG, for example, material proportion and size, influence its efficiency~\cite{JX_18}. The efficiency of thermoelectric generators are optimized by exploiting different configurations~\cite{JX_27,JX_43} and improving the exhaust pipe~\cite{JX_71}. Liu et al.~\cite{JX_44} focused on structural design of the heat exchanger to improve the maximum power output. In addition, using engine water coolant, several work~\cite{JX_7,JX_35} developed a low temperature thermoelectric generator.
+
+However, exclusively using TEGs in vehicles presents the limitation that the TEGs have to be placed on the exhaust pipe surface, where the waste heat exists. To deal with the situation, heat pipes are usually combined with TEGs in vehicles. A heat pipe is a metallic pipe that is sealed at both ends and is partially filled with a fluid at vacuum pressure. Heat pipes are used to transfer heat for relatively long distances with minimal thermal resistance. The use of heat pipes allows for more flexible designs as the TEG location is not limited to the exhaust pipe surface~\cite{JX_56}. The combination of heat pipes and TEGs allowed for heat transfer and power production without introducing extra moving parts~\cite{JX_36,JX_44,JX_56}. Kim et al.~\cite{JX_36} presented that each thermoelectric element experiences a small temperature difference, using heat pipes to carry heat to TEGs provides increased heating area to increase the total power.
+
+%\subsection{Conclusion}
+%
+%In this work, research work about energy harvesting on electric vehicles are surveyed and summarized based on different energy sources, including solar energy, wind energy, regenerative shock absorbers, braking and waste heat recovery. In each energy source category, the major challenges and conventional techniques are introduced and grouped. It can be noted that energy harvesting, as a promising renewable energy technique in EVs attracts many attentions in studying range extension, energy management and optimization, and the improvement of energy conversion efficiency.

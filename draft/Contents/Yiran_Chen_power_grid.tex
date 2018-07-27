@@ -1,0 +1,112 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Impact of Electric Vehicles on Power Grid} \label{sec:power_grid}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Electric vehicles are connected to the power grid via AC charger or fast AC or DC chargers. 
+The power capacity of electric vehicle charging station can be as high to 1.2 kW to 240 kW~\cite{YC_Hadley}.
+The random charging activities of numerous electric vehicles significantly stress the distribution system causing sever voltage fluctuations, degraded efficiency and economy~\cite{YC_Putrus, YC_Clement}. 
+However, electric vehicles are also able to feed power back to the Grid (regeneration). 
+If properly designed, electric vehicles can provide ancillary services to support the supply network as a distributed storage unit~\cite{YC_smartgrid1,YC_smartgrid2}. 
+In power systems, this two-way communication between the utility and the power supplier is also called the Smart Grid~\cite{YC_smartgrid}.
+
+In this section, literature reviews of electric vehicles integration and impact on power grid are presented, including electric vehicle charging load model, impact of electric vehicles charging and discharging on the power grid.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+\subsection{Electric vehicle charging load model}
+
+Electric vehicles can be considered as active loads connected to the power grid in the charging mode. 
+Therefore, an accurate model of the charging load is critical to the design of the power networks. 
+The properties of batteries and user behaviors are two key factors that influence the charging load modeling of electric vehicles. The modeling of batteries are presented in Section~\ref{sec:battery}. 
+In the following we summarize the impact of user behaviors on the charging load modeling. 
+
+Previous work~\cite{YC_Adornato10} analyzed naturalistic driving data and vehicle resting patterns in the context of electric vehicles design and impact on the power grid. 
+Driving schedules were utilized as input through simulations to determine the vehicles energy use per trip and per day. 
+These driving behaviors are then used to make predictions of the possible charging schedules and locations.
+As data collection is mandatory to ensure the solution fidelity, related work~\cite{YC_Ashtari11} recorded vehicle usage data for 76 vehicles in a one{\textendash}year period in the city of Winnipeg, Canada, and used this data to predict electric vehicles charging profiles and electrical range reliability. In this work, a stochastic charging profile prediction model is proposed base on the vehicle usage data.
+In~\cite{YC_Zhao12}, a preliminary road traffic simulation is conducted to determine the typical range which electric vehicle of a particular technology will achieve under consideration of everyday traffic. By utilizing the exponential distribution, they built the charging load model of electric vehicles.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Impact of electric vehicles charging on the power grid}
+
+\subsubsection{Modeling}
+ 
+Current research on the impact of massive integration of electric vehicles in power systems is generally focused on the development of business models, integration into the network, and impact on power system operation.
+These models can be broadly divided into two types: hourly time-series model and longterm large-scale model~\cite{YC_David}. 
+The hourly time-series model is only based on hourly historical data of electric supply and demand as well as charging data of electric vehicles to decide whether the power system meet the needs of electricity supply in the short time. 
+The long-term large-scale model run on regional or national scale over decades, with consideration on the mix of various constraints (economic, political, etc.) to build a optimized model.
+Current models of electric vehicles charging are mostly hourly time-series model due to its simplicity.     
+Previous work~\cite{YC_Stochastic} established an hourly time-series model, which used a quadratic programming method based on stochastic approach. Compared with classical dynamic programming model, the results show that quadratic and dynamic programming model are giving the same results but quadratic programming is faster and more accurate.
+A mid-term model simulates hourly power system operation in the Spanish power system is proposed in~\cite{YC_Fernandes}. 
+This model includes electric vehicles in the unit commitment and represents in detail mobility and connection patterns, and achieves more realistic estimation of electric vehicle economic and other factors.
+Some researchers believe the future research need to balance the calculation and accuracy of the actual situation~\cite{YC_David}. 
+Related work also indicates future research should include more analysis and calculation of randomness and grid reliability index to the model~\cite{YC_Green}.
+
+\subsubsection{Simulation}
+ 
+The integration of electric vehicles in power systems has adverse impact on the distribution grid as extra loads are added by the electric vehicles.   
+A lot of related research~\cite{YC_Hadley,YC_Hadley18,YC_Letendre19,YC_Kintner20,YC_Denholm21,YC_Hajimiragha23,YC_Hajimiragha24,YC_Hartmann25} has been done to estimate whether existing of planned power supply capacity can accommodate electric vehicles charging load growth.
+An observation on the usage of electric vehicles in Virginia and the Carolinas in the U.S. found that peak loads would increase under a simple charging strategy, requiring extra investment in generation and transmission capacity~\cite{YC_Hadley18}.
+
+Electric vehicle charging can also cause the power quality issues, including line loss increase, life span of distribution transformers decline, harmonic and fault current increase~\cite{YC_Papadopoulos27,YC_Richardson28,YC_Gomez29,YC_Chan30,YC_Leite33}. 
+These and other more technique issues are reviewed in~\cite{YC_Green}. 
+Electric vehicle charging in a disorderly manner over the distribution network would lead to node voltage offset and the damage of network lines if the owner does not make any restrictions~\cite{YC_Jian}.
+The effect of electric vehicles on residential distribution transformers is also reported in~\cite{YC_Gong}.
+Results show that the effects are negligible when electric vehicles are at low penetrations, but serious losses arise with increasing vehicle numbers.
+A study on UK distribution systems~\cite{YC_Papadopoulos} indicates that large number of electric vehicles lead to voltage limit violations, transformer overloads and increased line losses. 
+
+Recent studies show that the current U.S. generation infrastructure  could only support 70\% of the existing U.S. electric vehicles~\cite{YC_Schneider} if the charging schedule are well coordinated. 
+Otherwise, serious mismatch can arise between the electricity supply and consumption~\cite{YC_Hadley18}.
+With the growth of penetration levels of electric vehicles, the distribution system could be further impacted, including increased system peak load, losses, and decreases in voltage and system load factor~\cite{YC_Roe,YC_Clement09}.
+
+\subsubsection{Optimization}
+
+To mitigate the impacts of electric vehicle charging on the power grid, additional investment on generating electricity and transmission capacity are needed~\cite{YC_Hadley}.
+It is also important to carry out intelligent control safely and effectively for charging behavior of electric vehicles to increase grid reliability~\cite{YC_Papadopoulos}.
+Other works target at optimization of the charging plan instead of investment on additional electricity capacity. Previous studies have demonstrated that existing capacity can accommodate the overnight loads of a modest penetration (up to 20\%) of electric vehicles~\cite{YC_FORD1995207}. Related work show that employment of smart charging plans would achieve a flat overnight load and further optimize overall charging at high electric vehicles penetration~\cite{YC_JUUL20113523,YC_Denholm21}.
+Elaborated optimal charging algorithms can coordinate charging of electric vehicles so that the distribution system losses could be minimized.~\cite{YC_Sortomme} developed three optimal charging algorithms. The results also provides additional benefits of reduced computation time and problem convexity when using load factor or load variance as the objective function rather than system losses.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Impact of electric vehicles discharging on the power grid}
+
+\begin{table}[t]
+	\caption{PHEV charging scenarios (PHEV: plug-in electric vehicles; CHP: combined heat and power.)~\cite{YC_Green,YC_Acha}}
+	\centering
+	\begin{tabular}{|c||c|c|}		
+		\hline
+		PHEV/CHP Penetration & Grid-To-Vehicle & Vehicle-to-Grid \\
+		\hline \hline 
+		10  & 10pm-6am & 6am-10pm \\
+		\hline
+		10 & 9pm-9am    & 9am-9pm \\
+		\hline
+		10 & Continuous & Continuous \\
+		\hline
+		30 & 10pm-6am   & 6am-10pm \\
+		\hline
+		30 & 9pm-9am    & 9am-9pm \\
+		\hline
+		30 & Continuous & Continuous \\	
+		\hline			
+	\end{tabular}		
+	\label{YC_tab_v2G}
+\end{table}
+
+Electric vehicles connected into power grid can also play a role in regulating power supply and demand balance. 
+As show in Table~\ref{YC_tab_v2G}~\cite{YC_Green,YC_Acha}, we can charge electric vehicles when grid load is low. 
+When the power grid load is peak, the electric vehicles connected into network can be viewed as a distributed energy storage unit, which contribute electricity back to the grid system. 
+This bi-direction interaction of electric vehicles and the grid is called vehicle-to-grid (V2G)~\cite{YC_V2Gconcept1,YC_V2Gconcept2}.
+Moreover, V2G are able to harvest energy form large-scale intermittent renewable energy sources (wind, solar, etc.) as discussed in Section V, this would obviously impact the distribution grid as V2G enable electric vehicles could actually act as distributed generators connected to the power grid.
+The fundamental calculation of costs and power that are associated with V2G technology is described in~\cite{YC_V2Gconcept1}. 
+Based on these basic cost and power models,~\cite{YC_Reid,YC_Sutanto,YC_Brooks} further discussed the characteristics, benefits, flaws, economics, and technical specifications of V2G. 
+
+The electric vehicle participate in the power system can be viewed as ancillary energy generator. 
+A lot of research are focused on V2G to achieve load shifting, frequency regulation, and other control
+strategies. 
+Compared with classical power plants, the renewable energy sources have higher power energy fluctuation and intermittent.
+The electric cars act as distributed power generator to save energy.~\cite{YC_newyork} indicates the wind profile in New York matches electric vehicle charging need very well: the electric vehicles could be charged when power supplied by wind power is the greatest and V2G technology could be use to feedback energy to the grid by wind turbines.
+Related work~\cite{YC_DRUITT2012104} investigated the potential role of electric vehicles in an electricity network with a high contribution from variable generation such as wind power. The simulation models 1000 individual vehicle entities to represent the behavior of larger numbers of vehicles. 
+A stochastic trip generation profile is used to generate realistic journey characteristics. 
+Finally, experimental results show that the electric vehicles connected to the grid and discharge make up for intermittent of wind generate power, also bring the owners with a certain economic benefits.
+
+
+
