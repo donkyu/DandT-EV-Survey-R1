@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  31 JUL 2018 17:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  1 AUG 2018 14:33
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -992,30 +992,26 @@ Package pdftex.def Info: Figures/Jason_Xue/JX_circuit.jpg used on input line 32
 File: Figures/Jason_Xue/JX_shock.jpg Graphic file (type jpg)
 
 <use Figures/Jason_Xue/JX_shock.jpg>
-Package pdftex.def Info: Figures/Jason_Xue/JX_shock.jpg used on input line 93.
+Package pdftex.def Info: Figures/Jason_Xue/JX_shock.jpg used on input line 97.
 (pdftex.def)             Requested size: 252.0pt x 108.13948pt.
- [11 <./Figures/Jason_Xue/JX_shock.jpg>]
-<Figures/Jason_Xue/JX_brake.jpg, id=242, 501.875pt x 602.25pt>
+
+<Figures/Jason_Xue/JX_brake.jpg, id=239, 501.875pt x 602.25pt>
 File: Figures/Jason_Xue/JX_brake.jpg Graphic file (type jpg)
 
 <use Figures/Jason_Xue/JX_brake.jpg>
-Package pdftex.def Info: Figures/Jason_Xue/JX_brake.jpg used on input line 140.
+Package pdftex.def Info: Figures/Jason_Xue/JX_brake.jpg used on input line 144.
 
 (pdftex.def)             Requested size: 252.0pt x 302.40161pt.
-) (./Contents/Yiran_Chen_Power_grid.tex
-[12 <./Figures/Jason_Xue/JX_brake.jpg>] [13]) (./Contents/Conclusion.tex)
+ [11 <./Figures/Jason_Xue/JX_shock.jpg>])
+(./Contents/Yiran_Chen_Power_grid.tex [12 <./Figures/Jason_Xue/JX_brake.jpg>]
+[13]) (./Contents/Conclusion.tex)
 Underfull \hbox (badness 4859) in paragraph at lines 55--56
 \OT1/ptm/m/n/10 search Foun-da-tion (NRF) in Ko-rea un-der Grant No.
  []
 
 (./Bib/BIB_Naehyuck_Chang_Propulsion.tex [14])
-(./Bib/BIB_Al_Faruque_driving_profile.tex
-Underfull \hbox (badness 2302) in paragraph at lines 76--77
-[]\OT1/ptm/m/n/8 Google Inc., \The Google Di-rec-tions API." [On-line]. Avail-a
-ble:
- []
-
-[15]) (./Bib/BIB_Zili_Shao_Battery.tex
+(./Bib/BIB_Al_Faruque_driving_profile.tex [15])
+(./Bib/BIB_Zili_Shao_Battery.tex
 Underfull \hbox (badness 10000) in paragraph at lines 13--16
 []\OT1/ptm/m/n/8 Jean Paul Cun, Jean No Fio-r-ina, Michael Fraisse, And
  []
@@ -1026,7 +1022,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--16
  []
 
 
-Underfull \hbox (badness 4819) in paragraph at lines 13--16
+Underfull \hbox (badness 2932) in paragraph at lines 13--16
 \OT1/ptm/m/n/8 Ad-vanced Bat-tery Mon-i-tor-ing", MGE UPS Sys-tems, Greno-ble,
  []
 
@@ -1041,12 +1037,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 90--92
  []
 
 [16]
-Underfull \hbox (badness 2134) in paragraph at lines 188--189
-\OT1/ptm/m/n/8 de-vel-op-ment us-ing hardware-in-the-loop test-ing,"Journal of 
-Power
- []
-
-
 Underfull \hbox (badness 3343) in paragraph at lines 212--213
 []\OT1/ptm/m/n/8 Y. Wang, C. Zhang, and Z. Chen, \A method for state-of-
  []
@@ -1066,13 +1056,14 @@ File: omsptm.fd
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <8> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 39.
  [17]
-Underfull \hbox (badness 10000) in paragraph at lines 407--411
-[]\OT1/ptm/m/n/8 Christopher Lamp-ton,  ``How Re-gen-er-a-tive Brak-ing
+Underfull \hbox (badness 6078) in paragraph at lines 407--411
+[]\OT1/ptm/m/n/8 Christopher Lamp-ton,  ``How Re-gen-er-a-tive Brak-ing Works,'
+'
  []
 
 
-Underfull \hbox (badness 3019) in paragraph at lines 407--411
-\OT1/ptm/m/n/8 Works,''  How-Stuff-Works.com, 23, Febru-ary, 2018,  [On-line].
+Underfull \hbox (badness 10000) in paragraph at lines 407--411
+\OT1/ptm/m/n/8 How-Stuff-Works.com, 23, Febru-ary, 2018,  [On-line].
  []
 
 
@@ -1101,7 +1092,7 @@ fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
 /urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times
 /utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmri8a.p
 fb>
-Output written on draft.pdf (19 pages, 1530693 bytes).
+Output written on draft.pdf (19 pages, 1529534 bytes).
 PDF statistics:
  302 PDF objects out of 1000 (max. 8388607)
  215 compressed objects within 3 object streams

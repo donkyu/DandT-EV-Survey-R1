@@ -13,13 +13,11 @@
 
 \maketitle
 
-<<<<<<< HEAD
-The authors would like to thank the reviewers for the important comments and suggestions on the technical contents and presentation of our manuscript ``Survey of Low-Power Electric Vehicles: A Design Automation Perspective,'' submitted to IEEE Design and Test. This revised manuscript has been greatly improved thanks to the reviewers’ invaluable advices. We have revised the manuscript faithfully following the reviewers’ comments. We include the newly added or significantly modified parts in the revised version of the paper also in Response to Reviewers. We highlight the important technical content changes and set those parts in a red color in the revised paper. Detailed comments and corresponding corrections are listed below:\\
-=======
-The authors would like to thank the reviewers for the precious comments and suggestions on the technical contents and presentation of our manuscript ``Survey of Low-Power Electric Vehicles: A Design Automation Perspective,'' submitted to IEEE Design and Test. This revised manuscript has been greatly improved thanks to the reviewers' invaluable advices. We have revised the manuscript faithfully following the reviewers' comments. We include the newly added or significantly modified parts in the revised version of the paper also in Response to Reviewers. We highlight the important technical content changes and set those parts in a red color in the revised paper. 
 
-All the modified sentences in the revised manuscript are highlighted in Red for better readability. Detailed com- ments and corresponding corrections are listed below:\\
->>>>>>> 814885a693a100238591b3bd38439f55bad4a31c
+The authors would like to thank the reviewers for the important comments and suggestions on the technical contents and presentation of our manuscript ``Survey of Low-Power Electric Vehicles: A Design Automation Perspective,'' submitted to IEEE Design and Test. This revised manuscript has been  improved thanks to the reviewers’ invaluable advices. We have revised the manuscript faithfully following the reviewers’ comments. We include the newly added or significantly modified parts in the revised version of the paper also in Response to Reviewers. We highlight the important technical content changes and set those parts in a red color in the revised paper. Detailed comments and corresponding corrections are listed below:\\
+%The authors would like to thank the reviewers for the precious comments and suggestions on the technical contents and presentation of our manuscript ``Survey of Low-Power Electric Vehicles: A Design Automation Perspective,'' submitted to IEEE Design and Test. This revised manuscript has been greatly improved thanks to the reviewers' invaluable advices. We have revised the manuscript faithfully following the reviewers' comments. We include the newly added or significantly modified parts in the revised version of the paper also in Response to Reviewers. We highlight the important technical content changes and set those parts in a red color in the revised paper. 
+
+%All the modified sentences in the revised manuscript are highlighted in Red for better readability. Detailed com- ments and corresponding corrections are listed below:\\
 
 \setlength{\parindent}{0cm}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -28,9 +26,12 @@ All the modified sentences in the revised manuscript are highlighted in Red for 
 \begin{description}
 \item [C1: ] Energy-optimization of EVs is a multi-objective optimization problem subject to route profiles, traffic conditions, primary driving purpose and physical constraints. In addition to the layer-wise discussion on optimization problem and the attempted solutions so far, it would be of great help to also incorporate technical comments on a feasibility of cross-layer optimization framework with full awareness of the energy consumption throughout the life cycle of EVs.\\ 
 Moreover, it would be interesting to understand if certain optimization trade-off would emerge when it comes to the life-cycle energy management. For instance, energy management conditioned on the cost of battery life/replacement, preferred travel cost (e.g., acceptable time to arrive) and route profiles. In addition to reviewing  the solutions available so far, I think this survey could reach to a much broader audience if it can be positioned to shed some light on the future research directions.
-\item [R1: ] There are several research on battery aging and strategies to extend the battery life for EVs.  Please see the following modification of manuscripts.\\
+\item [R1: ] As the reviewer pointed out, cross-layer optimization is crucial for the ultimate EV power management. Such movement is undergoing now, and we are one of the leading contributors. However, the cross-layer optimization is still on-going work, and some early results are submitted to  IEEE Design and Test Magazine and under review now. So, it is early to include cross-layer optimization yet in this survey paper. 
+
+As per the battery cycle life, there are several research on battery aging and strategies to extend the battery life for EVs.  Please see the following modification of manuscripts.\\
 
 \underline{We added a new paragraph at the end of Section II-B in the manuscript as:}\\
+
 \textcolor{red}{
 \textbf{Title of Section II-B: Propulsion Power Optimization Minimizing EV Life-Cycle Cost}\\
 A cycle life of an EV battery is largely limited by its chemistry, but the charge/discharge behavior also significantly affects the cycle life [79]. From the EV owners' perspective, the total cost of ownership that includes the EV cost (battery chemistry and capacity), which is design-time optimization, electricity usage, which is runtime power management, and battery aging, which corresponds to the residual value and/or replacement cost, are equally important. The complete total cost of ownership optimization for a dedicated user is very complicated  and yet is an open problem. 
@@ -50,26 +51,35 @@ However, there have been several research practices on battery aging and guideli
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{description}
 \item [C1: ] The paper discusses about the planning issue for runtime power management with a fixed slope. But, with the assumption of a fixed slope, is dynamic programming based planning necessary?
-\item [R1: ] This paper discusses the dynamic programming method if the road slope is variable. In case of fixed road slope, the problem is defined as  finding the energy-optimal acceleration, cruising and deceleration for a given constant road slope.\\
+\item [R1: ] That paper discusses the dynamic programming method when the road slope is variable. In the case of a fixed road slope, the problem is defined as finding only three variables: the energy-optimal acceleration, cruising and deceleration.\\
 ~\\
 
 \item [C2: ] For the driving profile estimation algorithms, is there some related work about how to mitigate the prediction inaccuracy, and what will be the impact of inaccuracy on the overall EV power management?
-\item [R2: ] There are several driving profile models (\textit{e.g.,} the amount of pressure a driver applies on the accelerator and brake pedals, emotional aggressiveness and gathered data from all the drivers driving on a specific route.) They are adjusted and optimized to mitigate the impact of prediction inaccuracy on the improvement of the performance of the electric vehicles. We already described this in Section III of the original manuscript as follow: 
+\item [R2: ] 
 
-\textit{In summary, these driving profile models can be used for the purpose of personal identification, driver characteristics estimation, or estimation of the propulsion power by the electric motor. Later on, they can be adjusted and optimized for a specific driver or driving route in order to improve the performance of the electric vehicle in terms of battery lifetime, driving range, or even safety.} 
+This question will be answered by Al Faruque. 
 
-The segment information such as road slope and average speed impact of inaccuracy on the overall EV power management because vehicle speed and road slope determine the motor torque and angular speed. We already described this in Section III of the original manuscript as follow:  
+%There are several driving profile models (\textit{e.g.,} the amount of pressure a driver applies on the accelerator and brake pedals, emotional aggressiveness and gathered data from all the drivers driving on a specific route.) They are adjusted and optimized to mitigate the impact of prediction inaccuracy on the improvement of the performance of the electric vehicles. We already described this in Section III of the original manuscript as follow: 
 
-\textit{For instance, driving profile model containing the segment information such as road slope and average speed will enable the driving management methodology to estimate the energy consumption of the electric motor at each segment. The routing algorithm can be implemented such that the weights for the edges of the graph are defined as same as the objective considered in the driving management as shown in Fig. 6 [75]--[77].}
-\\
+%\textit{In summary, these driving profile models can be used for the purpose of personal identification, driver characteristics estimation, or estimation of the propulsion power by the electric motor. Later on, they can be adjusted and optimized for a specific driver or driving route in order to improve the performance of the electric vehicle in terms of battery lifetime, driving range, or even safety.} 
+
+%The segment information such as road slope and average speed impact of inaccuracy on the overall EV power management because vehicle speed and road slope determine the motor torque and angular speed. We already described this in Section III of the original manuscript as follow:  
+
+%\textit{For instance, driving profile model containing the segment information such as road slope and average speed will enable the driving management methodology to estimate the energy consumption of the electric motor at each segment. The routing algorithm can be implemented such that the weights for the edges of the graph are defined as same as the objective considered in the driving management as shown in Fig. 6 [75]--[77].}
+%\\
 ~\\
 
 \item [C3: ] There are some doubts about the energy harvesting techniques for EVs, especially for PVs and wind energy. For PV, please provide some guidance on the amount of potential energy generation vs. the power consumption of EV. For wind power, will the power be sufficient? Will it add the drag force of the EV? Will there be an overall benefit?
-\item [R3: ] The amount of power generated by PVs is maximum 200 W per square meter under 1 kW input solar power. On the other hands, EV power consumption is average 16 kW when Tesla Model S drives at 55 mph.
+\item [R3: ] The amount of power generated by PVs is maximum 200 W per square meter under 1 kW input solar power. On the other hands, EV power consumption is average 16 kW when Tesla Model S drives at 55 mph. Therefore, a simple calculation shows that PV power generation is way shorter than the EV power consumption. However, PV energy harvesting is still useful when the vehicle is parked for hours. PV panels on the EV can harvest  driving energy for significant if the EV is driven for commute in the morning and evening while it is parked at the non-covered parking lot during the whole daytime. 
 
-For the wind power, there is no additional drag force if the wind turbine is installed at the front of a bumper of the vehicle. Therefore, their is a benefit by installation of the wind turbine. Please read a following paper:\\
+Wind energy harvesting while driving, \textit{operating a windmill with the airflow created by the car movement}, cannot produce positive energy by Energy Conservation Law. Surprisingly, a lot of patents have been filed with that idea though. We additionally found a paper deals with this issue:
 
-\textit{S. Mohd, N. Rosly, R. Jamit, S. Shamsudin, A. Abdullah, ``An Evaluation of Drag Coefficient of Wind Turbine System Installed on Moving Car,'' Applied Mechanics and Materials, October, 2014.}
+\textit{S. Mohd, N. Rosly, R. Jamit, S. Shamsudin, A. Abdullah, ``An Evaluation of Drag Coefficient of Wind Turbine System Installed on Moving Car,'' Applied Mechanics and Materials, October, 2014.} We found there is technical fallacy in this paper. This paper only counted on the air dragging caused by the air duct and stationary turbine. The turbine will add additional load as the generator produces electricity. 
+
+We also reconfirmed that [149] and [177] mention the onboard windmill on EV, which is not technically sound. All other references in that subsection are not relevant to EV wind energy harvesting. [178] is not a good quality paper but looks like mentioning stationary wind energy harvesting. Wind generator can be still useful if the EV is parked and generate power by natural wind blow, but the amount of power generation should be minor.
+
+In conclusion, as the reviewer stated, additional air dragging due to the on-board windmill cannot produce positive energy. So, we apologize but we eliminate the wind energy harvesting subsection in the revised manuscript. 
+
 ~\\
 
 \item [C4: ] Finally, for the grid power management on EV charging, there are some more work on power management in the context of smart grid. Please provide more references and brief introduction of the algorithms used.
