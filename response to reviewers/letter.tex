@@ -13,7 +13,13 @@
 
 \maketitle
 
+<<<<<<< HEAD
 The authors would like to thank the reviewers for the important comments and suggestions on the technical contents and presentation of our manuscript ``Survey of Low-Power Electric Vehicles: A Design Automation Perspective,'' submitted to IEEE Design and Test. This revised manuscript has been greatly improved thanks to the reviewers’ invaluable advices. We have revised the manuscript faithfully following the reviewers’ comments. We include the newly added or significantly modified parts in the revised version of the paper also in Response to Reviewers. We highlight the important technical content changes and set those parts in a red color in the revised paper. Detailed comments and corresponding corrections are listed below:\\
+=======
+The authors would like to thank the reviewers for the precious comments and suggestions on the technical contents and presentation of our manuscript ``Survey of Low-Power Electric Vehicles: A Design Automation Perspective,'' submitted to IEEE Design and Test. This revised manuscript has been greatly improved thanks to the reviewers' invaluable advices. We have revised the manuscript faithfully following the reviewers' comments. We include the newly added or significantly modified parts in the revised version of the paper also in Response to Reviewers. We highlight the important technical content changes and set those parts in a red color in the revised paper. 
+
+All the modified sentences in the revised manuscript are highlighted in Red for better readability. Detailed com- ments and corresponding corrections are listed below:\\
+>>>>>>> 814885a693a100238591b3bd38439f55bad4a31c
 
 \setlength{\parindent}{0cm}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -26,13 +32,12 @@ Moreover, it would be interesting to understand if certain optimization trade-of
 
 \underline{We added a new paragraph at the end of Section II-B in the manuscript as:}\\
 \textcolor{red}{
-\textbf{Propulsion Power Optimization minimizing EV life-cycle cost}\\
-A cycle life of an EV battery is largely limited by its chemistry, but the charge/discharge behavior also significantly affects the cycle life [79]. From the EV owners' perspective, the total cost of ownership that includes the EV cost (battery chemistry and capacity -- design-time optimization), electricity usage (runtime power management) and battery aging (residual value and/or replacement cost) are equally important. The total cost of ownership optimization for a dedicated user is a very complicated problem and yet is an open problem. 
+\textbf{Title of Section II-B: Propulsion Power Optimization Minimizing EV Life-Cycle Cost}\\
+A cycle life of an EV battery is largely limited by its chemistry, but the charge/discharge behavior also significantly affects the cycle life [79]. From the EV owners' perspective, the total cost of ownership that includes the EV cost (battery chemistry and capacity), which is design-time optimization, electricity usage, which is runtime power management, and battery aging, which corresponds to the residual value and/or replacement cost, are equally important. The complete total cost of ownership optimization for a dedicated user is very complicated  and yet is an open problem. 
 %The propulsion power optimization minimizing EV life-cycle cost is very important problem for owners since the battery aging varies depending on the speed planning, and directly linked to cost of maintenance increases.
 %It is very complex to solve the optimization problem because we should consider the battery aging mechanism and road information as well as EV powertrain at the same time.\\
 %
-However, there have been several research practices on battery aging and guidelines to extend the EV battery cycle life~[36], [37]. Related work performed experiments to analyze the battery performance (capacity and allowable peak power) by cycle times under various driving conditions (\textit{e.g.}, the temperature, driving profiles, etc.) Such work proposed guidelines under both non-operating condition and operating condition based on the experimental results.}
-
+However, there have been several research practices on battery aging and guidelines to extend the EV battery cycle life~[36], [37]. Related work performes experiments to analyze the battery performance (capacity and allowable peak power) by cycle times under various driving conditions (\textit{e.g.}, the temperature, driving profiles, etc.) Such work proposes guidelines under both non-operating condition and operating condition based on the experimental results.}
 ~\\
 
 \end{description}
@@ -45,13 +50,18 @@ However, there have been several research practices on battery aging and guideli
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{description}
 \item [C1: ] The paper discusses about the planning issue for runtime power management with a fixed slope. But, with the assumption of a fixed slope, is dynamic programming based planning necessary?
-\item [R1: ] This paper discusses the dynamic programming method when the propulsion power optimization with a various road slope. In case of fixed slope, the problem is defined as finding the energy-optimal vehicle speed planning (acceleration, cruising and deceleration) for a given constant road slope.\\
+\item [R1: ] This paper discusses the dynamic programming method if the road slope is variable. In case of fixed road slope, the problem is defined as  finding the energy-optimal acceleration, cruising and deceleration for a given constant road slope.\\
 ~\\
 
 \item [C2: ] For the driving profile estimation algorithms, is there some related work about how to mitigate the prediction inaccuracy, and what will be the impact of inaccuracy on the overall EV power management?
-\item [R2: ] It is impossible to mitigate the inaccuracy of driving profile prediction because we need to know the actual driving profile from the driving monitoring system. 
+\item [R2: ] There are several driving profile models (\textit{e.g.,} the amount of pressure a driver applies on the accelerator and brake pedals, emotional aggressiveness and gathered data from all the drivers driving on a specific route.) They are adjusted and optimized to mitigate the impact of prediction inaccuracy on the improvement of the performance of the electric vehicles. We already described this in Section III of the original manuscript as follow: 
 
-The impact of inaccuracy is mainly depend on the inaccuracy of the road slope estimation result because the road slope is one of the main factors affecting the EV propulsion power.\\
+\textit{In summary, these driving profile models can be used for the purpose of personal identification, driver characteristics estimation, or estimation of the propulsion power by the electric motor. Later on, they can be adjusted and optimized for a specific driver or driving route in order to improve the performance of the electric vehicle in terms of battery lifetime, driving range, or even safety.} 
+
+The segment information such as road slope and average speed impact of inaccuracy on the overall EV power management because vehicle speed and road slope determine the motor torque and angular speed. We already described this in Section III of the original manuscript as follow:  
+
+\textit{For instance, driving profile model containing the segment information such as road slope and average speed will enable the driving management methodology to estimate the energy consumption of the electric motor at each segment. The routing algorithm can be implemented such that the weights for the edges of the graph are defined as same as the objective considered in the driving management as shown in Fig. 6 [75]--[77].}
+\\
 ~\\
 
 \item [C3: ] There are some doubts about the energy harvesting techniques for EVs, especially for PVs and wind energy. For PV, please provide some guidance on the amount of potential energy generation vs. the power consumption of EV. For wind power, will the power be sufficient? Will it add the drag force of the EV? Will there be an overall benefit?
@@ -59,14 +69,16 @@ The impact of inaccuracy is mainly depend on the inaccuracy of the road slope es
 
 For the wind power, there is no additional drag force if the wind turbine is installed at the front of a bumper of the vehicle. Therefore, their is a benefit by installation of the wind turbine. Please read a following paper:\\
 
-\textit{S. Mohd, N. Rosly, R. Jamit, S. Shamsudin, A. Abdullah, ``An Evaluation of Drag Coefficient of Wind Turbine System Installed on Moving Car," Applied Mechanics and Materials, October, 2014.}
+\textit{S. Mohd, N. Rosly, R. Jamit, S. Shamsudin, A. Abdullah, ``An Evaluation of Drag Coefficient of Wind Turbine System Installed on Moving Car,'' Applied Mechanics and Materials, October, 2014.}
 ~\\
 
 \item [C4: ] Finally, for the grid power management on EV charging, there are some more work on power management in the context of smart grid. Please provide more references and brief introduction of the algorithms used.
 \item [R4: ] We summarized several research on the V2G implementations and related algorithms. Please see the following modification of the manuscript.\\
 
 \underline{We modify the second paragraph of Section VII-C in the manuscript as:}\\
-\textcolor{red}{The V2G implementation involves frequent and intensive charging and discharging processes. To tackle the complex energy exchange between the power grid and the EVs, the unidirectional spinning reserve V2G algorithm was proposed~[243] to adjust the EV charging rate according to a Preference Operating Point (POP), where the minimal preliminary investment and EV batteries degradation can be achieved. Later, bidirectional V2G technologies~[244]--[246] that simultaneously utilize the Grid-to-Vehicle (G2V) and Vehicle-to-Grid (V2G) operations were proposed as they are more flexible in addressing the requirements of both the power grid and the EVs . Meanwhile, various V2G scheduling strategies~[234], [247], [248] targeted at minimizing the power grid load variance were also discussed. In general, one of the most commonly used mitigations to reduce power grid operation loss while accommodating to the large size of the EVs penetration is to shift this extra load to a valley period or to optimize the available power using the coordinated charging schemes~[249]. On the other hand, researchers proposed to utilize the renewable energy as energy sources for EVs. Compared to classical power plants, the renewable energy sources have higher power energy fluctuation and intermittent. However,}~[241] indicates the wind profile in New York matches electric vehicle charging need very well: the electric vehicles could be charged when power supplied by wind power is the greatest and V2G technology could be use to feedback energy to the grid by wind turbines.
+\textcolor{red}{The V2G implementation involves frequent and intensive charging and discharging processes. To tackle such complex charge exchange between the power grid and the EVs, the unidirectional spinning reserve V2G algorithm is proposed~[243] to adjust the EV charging rate according to a Preference Operating Point (POP), where the minimal preliminary investment and EV batteries degradation can be achieved.  Later bidirectional V2G technologies~[244]--[246] simultaneously utilize the Grid-to-Vehicle (G2V) and Vehicle-to-Grid (V2G) operations in a more flexible way addressing the requirements of both the power grid and EVs. Meanwhile, various V2G scheduling strategies~[234], [247], [248] aim at minimizing the power grid load variance. In general, one of the most commonly used mitigations to reduce power grid operation loss while accommodating a large size of the EVs penetration is to shift this extra load to a valley period or to optimize the available power using the coordinated charging schemes~[249]. On the other hand, 
+%researchers proposed to utilize the renewable energy as energy sources for EVs. C
+compared with classical power plants, renewable energy sources have higher power energy fluctuation and intermittent. However,}~[241] indicates the wind profile in New York matches electric vehicle charging need very well: the electric vehicles could be charged when power supplied by wind power is the greatest and V2G technology could be use to feedback energy to the grid by wind turbines.
 Related work~[242] investigated the potential role of electric vehicles in an electricity network with a high contribution from variable generation such as wind power. The simulation models 1000 individual vehicle entities to represent the behavior of larger numbers of vehicles. 
 A stochastic trip generation profile is used to generate realistic journey characteristics. 
 Finally, experimental results show that the electric vehicles connected to the grid and discharge make up for intermittent of wind generate power, also bring the owners with a certain economic benefits.
