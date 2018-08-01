@@ -57,7 +57,7 @@ However, there have been several research practices on battery aging and guideli
 \item [C2: ] For the driving profile estimation algorithms, is there some related work about how to mitigate the prediction inaccuracy, and what will be the impact of inaccuracy on the overall EV power management?
 \item [R2: ] 
 
-This question will be answered by Al Faruque. 
+\textbf{\textit{\textcolor{red}{This question will be answered by Al Faruque.}}}
 
 %There are several driving profile models (\textit{e.g.,} the amount of pressure a driver applies on the accelerator and brake pedals, emotional aggressiveness and gathered data from all the drivers driving on a specific route.) They are adjusted and optimized to mitigate the impact of prediction inaccuracy on the improvement of the performance of the electric vehicles. We already described this in Section III of the original manuscript as follow: 
 
@@ -86,6 +86,7 @@ In conclusion, as the reviewer stated, additional air dragging due to the on-boa
 \item [R4: ] We summarized several research on the V2G implementations and related algorithms. Please see the following modification of the manuscript.\\
 
 \underline{We modify the second paragraph of Section VII-C in the manuscript as:}\\
+
 \textcolor{red}{The V2G implementation involves frequent and intensive charging and discharging processes. To tackle such complex charge exchange between the power grid and the EVs, the unidirectional spinning reserve V2G algorithm is proposed~[243] to adjust the EV charging rate according to a Preference Operating Point (POP), where the minimal preliminary investment and EV batteries degradation can be achieved.  Later bidirectional V2G technologies~[244]--[246] simultaneously utilize the Grid-to-Vehicle (G2V) and Vehicle-to-Grid (V2G) operations in a more flexible way addressing the requirements of both the power grid and EVs. Meanwhile, various V2G scheduling strategies~[234], [247], [248] aim at minimizing the power grid load variance. In general, one of the most commonly used mitigations to reduce power grid operation loss while accommodating a large size of the EVs penetration is to shift this extra load to a valley period or to optimize the available power using the coordinated charging schemes~[249]. On the other hand, 
 %researchers proposed to utilize the renewable energy as energy sources for EVs. C
 compared with classical power plants, renewable energy sources have higher power energy fluctuation and intermittent. However,}~[241] indicates the wind profile in New York matches electric vehicle charging need very well: the electric vehicles could be charged when power supplied by wind power is the greatest and V2G technology could be use to feedback energy to the grid by wind turbines.
