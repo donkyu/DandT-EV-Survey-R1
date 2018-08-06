@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.19)  5 AUG 2018 13:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.19)  5 AUG 2018 15:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -399,27 +399,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 54--56
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
-
- []
-
-[2]
 Underfull \hbox (badness 10000) in paragraph at lines 89--90
 
  []
 
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--98
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--100
 
  []
 
@@ -436,7 +436,7 @@ Here is how much of TeX's memory you used:
 .enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr
 /local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/tex
 live/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on letter.pdf (3 pages, 53243 bytes).
+Output written on letter.pdf (3 pages, 53242 bytes).
 PDF statistics:
  27 PDF objects out of 1000 (max. 8388607)
  18 compressed objects within 1 object stream

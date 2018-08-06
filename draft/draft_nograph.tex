@@ -1,0 +1,90 @@
+\documentclass[journal]{IEEEtran}
+\usepackage{amsmath}
+\usepackage{mathptm}
+\usepackage{url}
+\usepackage{times}
+\usepackage{graphicx,color}
+\usepackage{CJKutf8}
+\usepackage{multirow}
+\usepackage{dblfloatfix}
+\usepackage{colortbl}
+\usepackage{tabularx}
+\usepackage{cleveref}
+\usepackage[noadjust]{cite}
+\usepackage{subfiles}
+\usepackage{acronym}
+   
+%\definecolor{LightCyan}{rgb}{0.88,1,1}
+%\newcolumntype{Y}{>{\centering\arraybackslash}X}
+
+\begin{document}
+\title{Survey of Low-Power Electric Vehicles: A Design Automation Perspective}
+
+\author{
+	Naehyuck Chang,~\IEEEmembership{Fellow,~IEEE},
+	Mohammad Abdullah Al Faruque,~\IEEEmembership{Senior Member,~IEEE},
+	Zili Shao,~\IEEEmembership{Member,~IEEE},
+	Chun Jason Xue,~\IEEEmembership{Senior Member,~IEEE},
+	Yiran Chen,~\IEEEmembership{Fellow,~IEEE}, and
+	Donkyu Baek,~\IEEEmembership{Member,~IEEE}
+\thanks{Direct questions and comments about this article to Naehyuck Chang, Korea Advanced Institute of Science and Technology, 291, Daehak-ro, Yuseong-gu, Daejeon, Korea (e-mail: naehyuck@cad4x.kaist.ac.kr).}
+}
+
+\maketitle
+
+% Note that keywords are not normally used for peerreview papers.
+%\begin{IEEEkeywords}
+%...
+%\end{IEEEkeywords}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% CONTENTS%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subfile{Contents/Introduction}
+\subfile{Contents/Naehyuck_Chang_Propulsion}
+\subfile{Contents/Al_Faruque_driving_profile}
+\subfile{Contents/Zili_Shao_Battery}
+\subfile{Contents/Jason_Xue_Harvesting}
+\subfile{Contents/Yiran_Chen_Power_grid}
+\subfile{Contents/Conclusion}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACKNOWLEDGMENT%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Acknowledgment}
+This work is partially supported by the National Research Foundation (NRF) in Korea under Grant No. 2015R1A2A1A09005694, by the National Science Foundation (NSF) in the United States under Grant No. ECCS 1611349, by the Council of the Hong Kong Special Administrative Region in China, under Grant No. GRF 152066/17E, by the Council of the Hong Kong Special Administrative Region in China, under Grant No. CityU 11214115, and by the Department of Energy (DOE) in the United States under Grant No. DE-SC0018064. The authors pay special thanks to the student contributors: Korosh Vatanparvar, Shaheer Muhammad and Fan Chen. 
+
+%The authors would like to thank Korosh Vatanparvar, Shaheer Muhammad and Fan Chen.
+%This work is based upon work partially supported by 
+%%
+%the National Research Foundation of Korea(NRF) grant funded by the Korea government(MSIP) (No. 2015R1A2A1A09005694), 
+%%
+%the National Science Foundation under Grant No. ECCS 1611349,
+%%
+%the grants from the Research Grants Council of the Hong Kong Special Administrative Region, China (GRF 152066/17E),
+%%
+%the grant from the Research Grants Council of the Hong Kong Special Administrative Region, China (Project No. CityU 11214115), and 
+%% 
+%the Department of Energy under Grant No. DE-SC0018064. 
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% REFERENCE%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\bibliographystyle{ieeetr}
+\begin{thebibliography}{100}
+\subfile{Bib/BIB_Naehyuck_Chang_Propulsion}
+\subfile{Bib/BIB_Al_Faruque_driving_profile}
+\subfile{Bib/BIB_Zili_Shao_Battery}
+\subfile{Bib/BIB_Jason_Xue_Harvesting}
+\subfile{BiB/BIB_Yiran_Chen_Power_grid}
+\end{thebibliography}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% BIOGRAPHY%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\vfill
+
+\end{document}
+
+
